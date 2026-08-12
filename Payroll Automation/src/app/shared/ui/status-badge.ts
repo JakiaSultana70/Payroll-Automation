@@ -1,0 +1,46 @@
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Tone } from '../../core/models/common';
+
+/** One status vocabulary for all 13 modules — see the traffic-light board in
+ *  the source activity diagrams. */
+@Component({
+  selector: 'ui-status-badge',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <span
+      class="inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs font-medium whitespace-nowrap"
+      [class.border-ok-600]="tone() === 'ok'"
+      [class.bg-ok-100]="tone() === 'ok'"
+      [class.text-ok-700]="tone() === 'ok'"
+      [class.border-warn-600]="tone() === 'warn'"
+      [class.bg-warn-100]="tone() === 'warn'"
+      [class.text-warn-700]="tone() === 'warn'"
+      [class.border-bad-600]="tone() === 'bad'"
+      [class.bg-bad-100]="tone() === 'bad'"
+      [class.text-bad-700]="tone() === 'bad'"
+      [class.border-brand-400]="tone() === 'brand'"
+      [class.bg-brand-100]="tone() === 'brand'"
+      [class.text-brand-700]="tone() === 'brand'"
+      [class.border-ink-300]="tone() === 'neutral'"
+      [class.bg-ink-100]="tone() === 'neutral'"
+      [class.text-ink-700]="tone() === 'neutral'"
+    >
+      @if (dot()) {
+        <span
+          class="h-1.5 w-1.5 rounded-full"
+          [class.bg-ok-600]="tone() === 'ok'"
+          [class.bg-warn-600]="tone() === 'warn'"
+          [class.bg-bad-600]="tone() === 'bad'"
+          [class.bg-brand-600]="tone() === 'brand'"
+          [class.bg-ink-400]="tone() === 'neutral'"
+        ></span>
+      }
+      {{ label() }}
+    </span>
+  `,
+})
+export class StatusBadge {
+  readonly label = input.required<string>();
+  readonly tone = input<Tone>('neutral');
+  readonly dot = input(true);
+}

@@ -1,0 +1,49 @@
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Icon } from './icon';
+
+/** Page title block. Actions project into the right-hand slot and stack
+ *  full-width on mobile rather than overflowing a flex row. */
+@Component({
+  selector: 'ui-page-header',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterLink, Icon],
+  template: `
+    <header class="mb-6">
+      @if (backLink()) {
+        <a
+          [routerLink]="backLink()"
+          class="mb-2 inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-brand-600"
+        >
+          <ui-icon name="arrow-left" [size]="16" />
+          {{ backLabel() }}
+        </a>
+      }
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div class="min-w-0">
+          @if (eyebrow()) {
+            <p class="text-xs font-semibold tracking-wide text-brand-600 uppercase">
+              {{ eyebrow() }}
+            </p>
+          }
+          <h1 class="mt-0.5 truncate text-xl font-semibold text-ink-900 sm:text-2xl">
+            {{ title() }}
+          </h1>
+          @if (subtitle()) {
+            <p class="mt-1 text-sm text-ink-500">{{ subtitle() }}</p>
+          }
+        </div>
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
+          <ng-content />
+        </div>
+      </div>
+    </header>
+  `,
+})
+export class PageHeader {
+  readonly title = input.required<string>();
+  readonly eyebrow = input('');
+  readonly subtitle = input('');
+  readonly backLink = input<string | null>(null);
+  readonly backLabel = input('Back');
+}
