@@ -1,0 +1,1 @@
+Next, implement the **Loan → EMI Payroll Integration**. When a loan is approved, make it active and automatically deduct the correct monthly EMI from the employee’s payroll until the loan is fully paid. Keep existing business logic and architecture intact, test the full flow with real backend data, and update `project-plan.md` after verification.

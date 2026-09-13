@@ -1,0 +1,1 @@
+Next, audit and implement the **Employee Detail → Related Records** section. Show the employee’s related **Attendance, Leave, Overtime, Payslips, Loans, Bonuses, and Settlement** in a clear, user-friendly way. Reuse existing data and APIs, do not break working features, test the complete flow, and update `project-plan.md` with the verified status.

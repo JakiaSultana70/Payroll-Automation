@@ -8,48 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4c3c44aec6320c5c",
+            "id": "12bfffae0409bc30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Payroll Project Plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "Payroll Project Plan"
             }
           },
           {
-            "id": "491a5ab79d0a6d95",
+            "id": "408cc41952976164",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "aaaa.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "aaaa"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "904d41eb5e614f7a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1332eb7ee3cd8e36",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -64,6 +43,7 @@
       {
         "id": "e31eee48e9f26939",
         "type": "tabs",
+        "dimension": 56.52866242038217,
         "children": [
           {
             "id": "e50b9edee242c004",
@@ -109,12 +89,91 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "d5afa8102b2bc79c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Payroll Project Plan.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
           }
         ]
+      },
+      {
+        "id": "35aa36946fdb9950",
+        "type": "tabs",
+        "dimension": 43.47133757961784,
+        "children": [
+          {
+            "id": "ea4e152f5682bad1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Payroll Project Plan.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "329a1b60ac7c07bd",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Payroll Project Plan.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5298143221576247,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Local graph"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "34c3b1571a0623ec",
@@ -219,9 +278,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "491a5ab79d0a6d95",
+  "active": "12bfffae0409bc30",
   "lastOpenFiles": [
-    "Welcome.md",
-    "aaaa.md"
+    "Payroll Engeen.md",
+    "Payroll Project Plan.md",
+    "Final Frontend.md",
+    "Employee Details.md",
+    "Leave.md",
+    "Overtime.md",
+    "Loans & Bonus.md",
+    "Loan.md",
+    "claude overview.md",
+    "Changes request.md",
+    "Settlement Initiate.md",
+    "project-plan.md",
+    "aaaa.md",
+    "Welcome.md"
   ]
 }

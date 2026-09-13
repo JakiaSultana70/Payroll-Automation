@@ -1,0 +1,9 @@
+The Leave module is not working correctly. When an Employee applies for leave, it asks them to select a rule/reason and shows “Admin has not configured the rule yet.” Fix this with a simple, user-friendly leave application flow. **When an Employee submits a leave request, it must automatically appear in the Admin/HR Leave Approval queue so they can Approve or Reject it with a reason.** Admin/HR should also be able to configure leave types/rules, and the configured rules should be used during application. Keep the existing architecture and data safe.
+
+2nd:
+Review and verify the complete Leave flow: **Employee → Apply Leave → HR/Admin Approve/Reject → Leave Balance → Payroll impact**. Fix only confirmed issues and preserve all working functionality.
+
+After every task, **always update `project-plan.md`** with the actual verified status. Do not make unrelated changes, break existing code, or mark unverified work as complete. Run relevant tests/builds and live-verify important changes before finishing.
+
+3rd:
+Proceed with automatic **Leave Encashment** using the employee’s actual unused leave balance and the existing daily-rate calculation. For **Gratuity**, use a configurable company rule instead of hardcoding a legal formula. Admin/HR should be able to configure the gratuity rate, minimum service period, and calculation basis (Basic Salary). Automatically calculate tenure from joining date to last working day. Show the calculated values clearly on the Settlement form, while allowing HR/Accountant to review before final approval. Test the complete settlement flow with real backend data and update `project-plan.md`
